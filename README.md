@@ -1,2 +1,0 @@
-# ICTindeWolken
-Mijn projecten
