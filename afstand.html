@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+  
+	<head>
+  
+		<meta charset="utf-8">
+		<meta name="viewport" content="width= device-width">
+		<meta name="description" content="">
+		<meta name="author" content="Zien Alsabbagh">
+		<meta name="keywords" content="">
+		<link rel="stylesheet" href="style.css">
+  
+		<title>Redzibak</title>
+    
+	</head>
+  
+	<body>
+  
+		<header>
+    
+     		<h1> Anderhalve meter project </h1>
+    
+		</header>
+    
+    		<nav>
+    
+				<a href="index.html">Home</a>
+				<a href="https://github.com/REDZIBAK" target="_blank">GitHub</a>
+    
+    		</nav>
+    
+    		<main>
+    
+      			<section class="documentation">
+        
+					Voor mijn eerste project deed ik mee met de anderhalve meter project. <br>
+					Het doel was om een manier te vinden om anderhalve meter te kunnen detecteren. <br> <br>
+					
+					Eerst begon ik met een paar ideeën. Zoals een app die bijhoudt of je afstand houdt.
+					Of een drone die rondvliegt en checkt wie wel en wie niet afstand houdt. <br>
+					
+					Om afstand te kunnen detecteren heb ik met de <a href="https://microbit.org/" target="_blank">micro:bit</a> gewerkt. <br>
+					Een microbit is een kleine chip met een scherm van 25 pixels en twee knoopjes. <br>
+					Een microbit heeft veel meer maar voor deze project hebben we de radios nodig. <br> <br>
+					
+					De microbits gaan radiosignalen naar elkaar zenden en daarmee kunnen we detecteren hoe dicht ze bij elkaar staan. <br>
+					Als de bicrobbits binnen dezelfde radiogroep zitten, dan zullen ze de signalen van andere microbits herkennen. <br>
+					
+					<figure> 
+						
+						<image src="image/afstandsignaal.png" alt="code microbit" width="1200"> 
+						
+					</figure> 
+					
+					<figcaption> 
+					
+						Afstand detecteren met microbit.
+					
+					</figcaption>
+					
+					<br>
+					
+					Hierboven zie je een code die ervoor zorgt dat de microbits steeds signalen naar elkaar zenden. <br>
+					Als de microbit een signaal ontvangt met een signaalsterkte groter dan -75, telt hij 1 bij. <br>
+					Je krijgt dan ook een "X" te zien op je scherm. <br>
+					Als je dan op knop "A" drukt, krijg je hoeveel seconden je geen afstand hebt gehouden. <br>
+					Als je wel afstand houdt zie je een ":)" op je scherm. <br> <br>
+					
+					Als volgt willen we een ID maken voor elke microbit en detecteren met hoeveel mensen (ID's) we geen afstand hebben gehouden. <br>
+					We willen een lijst maken met daarin het aantal ID die we zijn tegengekomen binnen anderhalve meter. <br>
+					We willen ook niet dat we dezelfde ID twee keer in onze lijst krijgen. <br>
+					
+					<figure> 
+						
+						<image src="image/afstandlijst.png" alt="code microbit" width="1200"> 
+						
+					</figure> 
+					
+					<figcaption> 
+					
+						Fase twee.
+					
+					</figcaption>
+					
+					Als de ID niet in de lijst staat, zal hij een index van -1 teruggeven. <br>
+					Anders geeft hij een getal >= 0. <br>
+					
+					Als je op knopje "B" drukt krijg je de lengte van de lijst. <br> <br>
+					
+					De microbit kan worden gebruikt in gesloten ruimtes om bij te houden of je afstand houdt van anderen. <br>
+					Je kunt vervolgens mensen belonen die wel afstand houden van anderen. <br>
+					Zo'n functie kan ook worden toegevoegd aan een corona-app die ook andere functies bevat zoals een soort Google Maps <br>
+					om drukke plekken te kunnen vermijden. <br> <br>
+					
+					In deze project heb ik geleerd hoe je een microbit-code kan schrijven en op de microbit kan zetten. <br>
+					Ik heb ook geleerd zelf aan werk te gaan. <br> <br>
+					Een probleem dat ik tegenkwam was de signaalsterkte die af en toe verschilde zonder reden. <br>
+					Een ander probleem waar we een oplossing voor hebben bedacht, was dat de teller niet seconden telt maar signalen. <br>
+					De microbit zond meer dan 1 signaal per seconde uit en daarvoor moest ik een seconde wachttijd instellen.
+					
+      			</section>
+    
+    		</main>
+    
+    		<footer>
+    
+      			&copy; Zien Alsabbagh. All rights reserved, 2020.
+    
+			</footer>
+  
+  	</body>
+
+</html>
